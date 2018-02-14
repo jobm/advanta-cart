@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.5/css/mdb.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<nav class="navbar navbar-dark indigo justify-content-between">
+    <a class="navbar-brand">Advanta LTD</a>
+    <form class="form-inline">
+        <a href="/admin/core/product/" class="btn btn-outline-success btn-sm my-0" type="submit">
+            <span style="font-size: 21px;">+</span>
+        </a>
+    </form>
+</nav>
+
+<div class="container">
+    <br>
+    {% block content %}
+
+    {% endblock %}
+</div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.5/js/mdb.min.js"></script>
+</body>
+</html>

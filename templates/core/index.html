@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="row">
+    {% for object in object_list %}
+           <div class="col-md-6 col-md-offset-3">
+            <div class="card">
+                <!--Card image-->
+                <img class="img-fluid text-center" src="{{ object.image.url }}" alt="product img" width="550px" height="500px">
+
+                <!--Card content-->
+                <div class="card-body">
+                    <!--Title-->
+                    <h4 class="card-title">{{ object.name }}</h4>
+                    <!--Text-->
+                    <p class="card-text">
+                        {{ object.description }}
+                    </p>
+                    <div class="card-footer text-muted info-color white-text">
+                        <p class="mb-0">KSh {{ object.price }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% empty %}
+        <div class="col-md-12 text-center">
+            <p>There are no Products</p>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}

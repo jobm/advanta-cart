@@ -1,9 +1,10 @@
 # Advanta Cart
 
 #### Local Project Set-Up
-   1. `pip install -r requirements.txt`
-   2. create `local_setting.py` and import it in `settings.py`
-   3. Add your local setting to `local_settings.py` e.g. db, email e.t.c
+   1. Create a virtual environment 
+   2. `pip install -r requirements.txt` into the venv
+   3. create `local_setting.py` and import it in `settings.py`
+   4. Add your local setting to `local_settings.py` e.g. db, email e.t.c
 
 #### Using Postgres Locally
 - To use postgres make sure you create a database using psql then have the following settings in your `local_settings.py` file.

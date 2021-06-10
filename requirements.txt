@@ -5,7 +5,7 @@ click==6.7
 decorator==4.2.1
 dj-database-url==0.4.2
 -e git://github.com/hersonls/djamin.git@5b5887c84341065844ab44b6cfc8ccb865ccfdb9#egg=djamin
-Django==1.11.2
+Django==2.2.24
 django-model-utils==3.1.1
 funcsigs==1.0.2
 future==0.16.0
